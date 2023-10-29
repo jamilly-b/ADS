@@ -1,1 +1,51 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
 
+#twitter{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Lado esquerdo */
+#left-side{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(206, 206, 240);
+    border-right: 2px solid lightgray;
+}
+#nav-bar{
+
+}
+#menu ul{
+    margin: 20px;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#menu ul img{
+    width: 25px;
+    height: 25px;
+}
+
+/* Meio */
+#middle-content{
+    height: 100%;
+    width: 50%;
+    background-color:rgb(206, 206, 240);
+    border-right: 2px solid lightgray;
+}
+
+/* Lado direito */
+#right-side{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(206, 206, 240);
+}

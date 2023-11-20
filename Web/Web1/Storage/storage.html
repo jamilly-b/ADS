@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="nome"></h1>
+    <script>
+        // local Storage
+        console.log(localStorage.length);
+        console.log(sessionStorage.length);
+        localStorage.setItem("nome", "jamilly");
+        let nome = document.getElementById("nome");
+        nome.innerHTML = localStorage.getItem("nome");
+        localStorage.clear;
+
+        //session Storage
+        sessionStorage.setItem("nome", "jamilly");
+        nome.innerHTML = sessionStorage.getItem("nome");
+        sessionStorage.clear;
+    </script>
+</body>
+</html>

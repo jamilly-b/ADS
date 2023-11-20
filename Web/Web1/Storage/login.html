@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 200px;
+            padding: 30px;
+            border: 1px solid gray;
+            border-radius: 15px;
+        }
+        form input{
+            margin: 5px;
+        }
+
+    </style>
+    <form id="form">
+        <h1>Login</h1>
+        <input type="text" id="usuario" placeholder="Nome de usuário" required>
+        <input type="password" name="" id="senha" placeholder="Senha" required>
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+        form.addEventListener("submit", function(e) {
+            e.preventDefault(); 
+            let usuario = document.getElementById("usuario").value;
+            let senha = document.getElementById("senha").value;
+            let form = document.getElementById("form");
+            if (senha === usuario){
+                form.setAttribute("action", "index.html");
+                localStorage.setItem("nome", usuario);
+                form.submit();
+                console.log(usuario);
+            }
+            else{
+                window.alert("senha errada");
+            }
+        });
+    </script>
+</body>
+</html>
